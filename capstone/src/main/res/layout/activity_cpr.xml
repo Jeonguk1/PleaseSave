@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".heartList.CprActivity">
+
+    <RelativeLayout
+        android:id="@+id/imageButtonLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/aedButton"
+            android:layout_width="192dp"
+            android:layout_height="91dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white"
+            android:scaleType="centerInside"
+            android:src="@drawable/aed" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/aedButton"
+            android:layout_centerHorizontal="true"
+            android:text="자동심장충격기 사용법"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/imageButtonLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonLayout1">
+
+        <ImageButton
+            android:id="@+id/cprButton2"
+            android:layout_width="192dp"
+            android:layout_height="91dp"
+            android:background="@color/white"
+            android:scaleType="centerInside"
+            android:src="@drawable/cpr" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cprButton2"
+            android:layout_centerHorizontal="true"
+            android:text="심폐소생술 방법"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
